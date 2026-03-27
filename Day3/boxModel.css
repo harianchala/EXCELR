@@ -1,0 +1,23 @@
+/*block level element*/
+div{
+    border-style: solid;
+    border-color: chartreuse;
+    border-width: 4px;
+    margin-bottom: 50px;
+}
+/*inline level element*/
+span{
+    /**border-style: solid;
+ 
+    border-color: red;
+    border-width: 5px;
+    
+**/
+/*shorthand for border*/
+border : 5px solid red;
+border-radius: 5px;
+padding: 1px 1px 1px 1px;
+/*we can use shorthand structure for padding as like border*/
+margin-top: 400px;
+margin-left: 40px;
+}

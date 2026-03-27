@@ -1,0 +1,26 @@
+/* element selector -- it indicates with tagname */
+div{
+    color:red;
+    
+}
+/* id selector -- it indicates with # and id name */
+#div1{
+    color:blue;
+}
+/* class selector -- it indicates with . and class name */
+.div2{
+    border: 5px solid black;
+    color:green;
+}
+
+b,i,del,mark,span{
+    color:purple;
+    display: block;
+}
+/* universal selector -- it indicates with * and it applies to all elements */
+/* and has less specificity than other selectors */
+*{
+    font-size: 20px;
+    margin: 20px;
+    background-color: yellow;
+}

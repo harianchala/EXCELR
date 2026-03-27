@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector Demo</title>
+    <link rel="stylesheet" href="selector.css">
+</head>
+
+<body>
+
+<div id="div">Element</div>
+<div id="div1">Element1</div>
+<div>Element2</div>
+<div>Element3</div>
+
+<hr>
+
+<!-- FIRST parent -->
+<div class="parent">
+    <div class="child">child</div>
+
+    <div>
+        <div class="child">nested child (not direct)</div>
+    </div>
+
+    <div class="child">child</div>
+</div>
+
+<!-- SECOND parent (adjacent → + applies) -->
+<div class="parent">
+    <p>Second parent</p>
+</div>
+
+<!-- THIRD parent (only ~ applies, not +) -->
+<div class="parent">
+    <p>Third parent</p>
+</div>
+
+<hr>
+
+<input type="text" placeholder="text input">
+<input type="number" placeholder="number input">
+
+</body>
+</html>
