@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>table3</title>
+        <style>
+               table ,th,td{
+             border: 1px solid black;
+    }
+    .timetable, .timetable th, .timetable td {
+        border-collapse: collapse;
+        text-align: center;
+        border-width: 2px;
+         
+    }
+    #total{
+        font: bold 20px black;
+        text-align: right;
+    }
+    .Product {
+    border: none;
+    border-radius: 10px;
+    
+    border-collapse: separate;  
+    border-spacing: 3px;           
+    overflow: hidden;           
+}
+
+.Product th, .Product td {
+    border: 1px solid black;
+    border-radius: 2px;
+    text-align: center;
+    padding: 10px;
+}
+
+.Product th {
+    background-color: rgb(16, 199, 28);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    color: white;             
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.Product td {
+    background-color: rgb(111, 254, 1);
+}
+#ninja-a {
+    background-color: pink;
+    text-align: center;
+}
+</style>
+    </head>
+    <body>
+        <h1>Table with Uncollapsed Borders</h1>
+        <table>
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Job Title</th>
+                <th>Email address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>Anna Fitzgerald</td>
+            <td>Staff Writer</td>
+            <td>example@company.com</td>
+        </tr>
+        <tr>
+            <td>Zendaya Grace</td>
+            <td>Marketing Manager</td>
+            <td>example2@company.com</td>
+        </tr>
+        <tr>
+            <td>Jhon Smith</td>
+            <td>CEO</td>
+            <td>example3@company.com</td>
+        </tr>
+        </tbody>
+        </table>
+
+         <br><br>
+
+            <hr>
+        <br><br>
+
+        <table>
+            <thead>
+            <tr>
+                <th rowspan="2" id = "heading">Heading</th>
+                <th>Students</th>
+                <th colspan="3">Details</th>
+            </tr>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Roll Number</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="5">Student List</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Victor</td>
+                    <td>Computer Science</td>
+                    <td>12345</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Williams</td>
+                    <td>Electronics</td>
+                    <td>23456</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Harry</td>
+                    <td>Electrical</td>
+                    <td>34567</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Rick</td>
+                    <td>Civil</td>
+                    <td>45678</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br><br>    
+        <hr>
+        <br><br>
+        <table class = "timetable">
+            <thead>
+                <tr>
+                    <th colspan="6">Time Table</th>
+                    
+                </tr>
+                 </thead>
+                 <tbody>
+              <tr>
+                    <td rowspan="6">Hours</td> 
+                        <td>Math</td>
+                        <td>Science</td>
+                        <td>Math</td>
+                        <td>Science</td>
+                        <td>Arts</td>
+            </tr>
+                <tr>
+                      
+
+                    <td>Math</td>
+                    <td>Science</td>
+                    <td>Math</td>
+                    <td>Science</td>
+                    <td>Arts</td>
+                </tr>
+                <tr>
+                    <td>Math</td>
+                    <td>Science</td>
+                    <td>Math</td>
+                    <td>Science</td>
+                    <td>Arts</td>
+                </tr>
+                <tr>
+                    <td colspan="5">Lunch</td>
+                </tr>
+                <tr>
+                     <td>Math</td>
+                    <td>Science</td>
+                    <td>Math</td>
+                    <td colspan="2">Project</td>
+                </tr>
+                <tr>
+                     <td>Math</td>
+                    <td>Science</td>
+                    <td>Math</td>
+                    <td colspan="2">Project</td>
+                </tr>
+            </tbody>
+        </table>
+        <br><br>
+        <hr>
+        <br><br>
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>  
+                    <th>Extend</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Hard Disk</td>
+                    <td>1</td>
+                    <td>500$</td>
+                    <td>400$</td>
+                </tr>
+                <tr>
+                    <td>Cd Drive</td>
+                    <td>1</td>
+                    <td>200$</td>
+                    <td>500$</td>
+                </tr>
+                <tr>    
+                    <td>Cds</td>
+                    <td>10</td>
+                    <td>20$</td>
+                    <td>50$</td>
+                </tr>
+                <tr>
+                    <td colspan = "3" id = "total">Total Amount</td>
+                    <td><b>950$</b></td>
+                </tr>
+            </tbody>
+        </table>
+        <br><br>
+         <hr>
+            <br><br>
+            <table class = "Product">
+                <thead>
+                    <tr>
+                        <th>Product ID</th>
+                        <th>Product Name</th>
+                        <th>Product Quality</th>
+                        <th>Product Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>1</td>
+                    <td>Wheat</td>
+                    <td>Good</td>
+                    <td>200 Bags</td>
+                    </tr>
+                    <tr>
+                    <td>2</td>
+                    <td>Rice</td>
+                    <td>Good</td>
+                    <td>250 Bags</td>
+                    </tr>
+                    <tr>
+                    <td>3</td>
+                    <td>Sugar</td>
+                    <td>Good</td>
+                    <td>200 Bags</td>
+                    </tr>
+                    <tr>
+                    <td>3</td>
+                    <td>Sugar</td>
+                    <td>Good</td>
+                    <td>200 Bags</td>
+                    </tr>
+                    <tr>
+                    <td>3</td>
+                    <td>Sugar</td>
+                    <td>Good</td>
+                    <td>200 Bags</td>
+                    </tr>
+                    <tr>
+                    <td>3</td>
+                    <td>Sugar</td>
+                    <td>Good</td>
+                    <td>200 Bags</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br><br>
+             <hr>           
+            <br><br>
+            <h1>Ninja Details</h1>
+            <table class = "ninja-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id = "ninja-a">Ninja A</td>
+                        <td>18</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <td>Ninja B</td>
+                        <td>23</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>Ninja C</td>
+                        <td>22</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><b>Ninja C is the best learner!</b></td>
+                    </tr>
+                </tbody>
+                
+            </table>
+                    <br><br>
+                    <hr>
+                <br><br>
+        <table>
+            <thead>
+                 <tr>
+                    <th></th>
+                   <th colspan="2">Schedule</th>
+                    <th colspan="3">Seminar</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    
+                    <td rowspan ="4">Day</td>
+                    <td>Begin</td>
+                    <td>End</td>
+                   <td rowspan="4" >Topic</td>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>8:00</td>
+                    <td>5:00</td>
+                    <td>Introduction to xml</td>  
+                </tr>
+            </tbody>
+            </table>
+    </body>
+</html>
