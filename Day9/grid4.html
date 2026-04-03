@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GRID4</title>
+        <style>
+          .container{
+           border:1px solid black;
+           min-height: 100px;
+           display: grid;
+           grid-template-areas:"nav     nav     nav"
+                                "main   main    section"
+                                "footer footer  footer";
+          gap: 10px;
+
+          }
+          .navbar{
+            background-color:silver;
+            grid-area:nav;
+          }
+          .main{
+            background-color: aqua;
+            grid-area:main;
+          }
+          .section{
+            background-color: blueviolet;
+            grid-area:section;
+          }
+          .footer{
+            background-color: chartreuse;
+            grid-area:footer;
+          }
+          .container div{
+            font-size: 40px;
+           align-content: center;
+          }
+        </style>
+    </head>
+    <body>
+        <div class ="container">
+            <div class="navbar">Navbar</div>
+            <div class="main">Main</div>
+            <div class="section">Section</div>
+            <div class="footer">footer</div>
+        </div>
+
+    </body>
+    </html>

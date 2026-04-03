@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GRID3</title>
+        <style>
+          .container{
+           border:1px solid black;
+           min-height: 100vh;
+           display: grid;
+           grid-template-columns: repeat(3,1fr);
+           grid-template-rows: repeat(3,4fr);
+           gap: 10px;
+
+          }
+          .navbar{
+            background-color:silver;
+            grid-column: 1/4;
+          }
+          .main{
+            background-color: aqua;
+            grid-area: 2/1/4/3;
+          }
+          .section{
+            background-color: blueviolet;
+            grid-row: 2/4;
+          }
+          .footer{
+            background-color: chartreuse;
+            grid-column: 1/4;
+          }
+        </style>
+    </head>
+    <body>
+        <div class ="container">
+            <div class="navbar">Navbar</div>
+            <div class="main">Main</div>
+            <div class="section">Section</div>
+            <div class="footer">footer</div>
+        </div>
+
+    </body>
+    </html>
